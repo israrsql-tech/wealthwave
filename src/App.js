@@ -18,7 +18,7 @@ import "./i18n";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";  // ← YE ADD KARO
 
-const API_URL = "http://localhost:4000/api";
+const API_URL = "https://wealthwave-backend-production.up.railway.app/api";
 // const API_URL = "http://10.113.213.87:4000/api";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement,Tooltip, Legend);

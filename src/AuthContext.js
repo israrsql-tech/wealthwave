@@ -1,7 +1,7 @@
 // src/AuthContext.js
 import { createContext, useContext, useState, useEffect } from "react";
 
-const API_URL = "http://localhost:4000/api";
+const API_URL = "https://wealthwave-backend-production.up.railway.app/api";
 // const API_URL = "http://10.113.213.87:4000/api";
 
 
