@@ -167,91 +167,122 @@ export const MenuDrawer = () => {
 };
 
 export const AboutPage = () => {
-  const { categories } = useApp(); // Real categories show karo
+  const { categories } = useApp();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-blue-50 p-4 md:p-8 pt-20 md:pt-24">
       <div className="max-w-4xl mx-auto">
-        <Link to="/" className="inline-flex items-center px-6 py-3 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 mb-12 shadow-lg">
+
+        {/* BACK */}
+        <Link
+          to="/"
+          className="inline-flex items-center px-6 py-3 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 mb-12 shadow-lg"
+        >
           ← Back to Dashboard
         </Link>
-        
+
+        {/* HERO */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-blue-600 bg-clip-text text-transparent mb-6">
             💰 WealthWave
           </h1>
+
           <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Full-stack personal finance tracker built with React + Node.js + PostgreSQL. 
-            Track transactions, budgets, savings pots, bills with AI-powered insights.
+            A full-stack personal finance management platform built with
+            React, Node.js, and PostgreSQL.  
+            Designed to help users track expenses, manage budgets, and gain
+            AI-powered financial insights.
           </p>
         </div>
 
-        {/* FEATURES - TERA ACTUAL PROJECT */}
+        {/* FEATURES */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           <div className="bg-white/90 backdrop-blur-xl p-8 lg:p-12 rounded-3xl shadow-2xl border border-white/50">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 flex items-center gap-3">
               🚀 <span>Core Features</span>
             </h2>
+
             <ul className="space-y-4 text-lg grid grid-cols-1 md:grid-cols-2">
-              <li> Income & Expense tracking</li>
-              <li> Custom categories ({categories?.length || 8}+)</li>
-              <li> Monthly budgets + alerts</li>
-              <li> Multiple savings pots</li>
-              <li> Recurring bill reminders</li>
-              <li> Real-time charts </li>
-              <li> AI Chat insights</li>
-              <li> Dark/Light theme</li>
+              <li>Income & expense tracking</li>
+              <li>Custom categories ({categories?.length || 8}+)</li>
+              <li>Monthly budgets with alerts</li>
+              <li>Multiple savings pots</li>
+              <li>Recurring bill reminders</li>
+              <li>Interactive financial visualizations</li>
+              <li>AI-powered financial insights</li>
+              <li>Light & dark theme support</li>
             </ul>
           </div>
 
+          {/* TECH STACK */}
           <div className="bg-white/90 backdrop-blur-xl p-8 lg:p-12 rounded-3xl shadow-2xl border border-white/50">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-              🛠️ <span>Tech Stack</span>
+              🛠️ <span>Technology Stack</span>
             </h2>
+
             <div className="grid grid-cols-2 gap-6 text-lg">
               <div>
-                <h3 className="font-bold text-emerald-900 mb-4 text-xl">Frontend</h3>
+                <h3 className="font-bold text-emerald-900 mb-4 text-xl">
+                  Frontend
+                </h3>
                 <ul className="space-y-2">
-                  <li> React 18 + Hooks</li>
-                  <li> Chart.js visualizations</li>
-                  <li> Tailwind CSS responsive</li>
-                  <li> Context API state</li>
+                  <li>React 18 with Hooks</li>
+                  <li>Chart.js data visualizations</li>
+                  <li>Tailwind CSS responsive UI</li>
+                  <li>Context API state management</li>
                 </ul>
               </div>
+
               <div>
-                <h3 className="font-bold text-emerald-900 mb-4 text-xl">Backend</h3>
+                <h3 className="font-bold text-emerald-900 mb-4 text-xl">
+                  Backend
+                </h3>
                 <ul className="space-y-2">
-                  <li> Node.js + Express APIs</li>
-                  <li> PostgreSQL database</li>
-                  <li> JWT authentication</li>
-                  <li> RESTful endpoints</li>
+                  <li>Node.js & Express REST APIs</li>
+                  <li>PostgreSQL relational database</li>
+                  <li>JWT-based authentication</li>
+                  <li>Secure, role-based endpoints</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        {/* CREATOR SECTION */}
+        {/* CREATOR */}
         <div className="bg-gradient-to-r from-emerald-600 via-green-600 to-blue-600 text-white p-12 lg:p-16 rounded-3xl text-center shadow-2xl">
-          <h3 className="text-3xl lg:text-4xl font-bold mb-6">Built by Israr N. Khan</h3>
+          <h3 className="text-3xl lg:text-4xl font-bold mb-6">
+            Built by Israr N. Khan
+          </h3>
+
           <p className="text-xl lg:text-2xl mb-8 opacity-90">
-            Full-stack Developer | Navi Mumbai, Maharashtra | Final Year Project
+            Full-Stack Developer | Mumbai, India
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://github.com/israr-dev/wealthwave" 
-               className="px-8 py-4 bg-white text-emerald-700 rounded-2xl font-bold text-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-              🌐 Live GitHub Repo
+            <a
+              href="https://github.com/israr-dev/wealthwave"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white text-emerald-700 rounded-2xl font-bold text-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
+            >
+              🌐 View GitHub Repository
             </a>
-            <a href="https://www.linkedin.com/feed/" 
-               className="px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold text-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+
+            <a
+              href="https://www.linkedin.com/in/Israr Khan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold text-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
+            >
               💼 Connect on LinkedIn
             </a>
           </div>
-          <p className="mt-8 text-lg opacity-80">Deployed on Vercel | API: Railway</p>
+
+          <p className="mt-8 text-lg opacity-80">
+            Deployed on Vercel • Backend hosted on Railway
+          </p>
         </div>
       </div>
-         {/* <MenuDrawer /> */}
-
     </div>
   );
 };
@@ -311,7 +342,7 @@ export const ContactPage = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
                 className="w-full p-5 lg:p-6 border-2 border-gray-200 rounded-2xl focus:border-emerald-500 focus:outline-none text-lg bg-gray-50 hover:bg-white transition-all"
-                placeholder="israrkhan171982@gmail.com.com"
+                placeholder="israrkhan171982@gmail.com"
                 required
               />
             </div>
@@ -338,7 +369,7 @@ export const ContactPage = () => {
 
           <div className="mt-12 pt-8 border-t border-gray-200 text-center">
             <p className="text-lg text-gray-600">
-              Or email directly: <a href="mailto:israrkhan171982@gmail.com" className="font-bold text-emerald-600 hover:underline">israrkhan171982@gmail.com.com</a>
+              Or email directly: <a href="mailto:israrkhan171982@gmail.com" className="font-bold text-emerald-600 hover:underline">israrkhan171982@gmail.com</a>
             </p>
           </div>
         </div>
@@ -355,28 +386,84 @@ export const PrivacyPage = () => (
       <Link to="/" className="inline-flex px-6 py-3 bg-gray-600 text-white rounded-xl hover:bg-gray-700 mb-12 shadow-lg">
         ← Back to Dashboard
       </Link>
+
       <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <h1 className="text-4xl font-bold text-gray-900 mb-10 flex items-center gap-3">
           🔒 Privacy Policy
         </h1>
-        <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
-          <p><strong>WealthWave data security:</strong></p>
-          <ul className="list-disc pl-6 space-y-3">
-            <li>✅ PostgreSQL database with JWT authentication</li>
-            <li>✅ Passwords hashed with bcrypt</li>
-            <li>✅ API endpoints secured with token validation</li>
-            <li>✅ No third-party analytics/tracking</li>
-            <li>✅ LocalStorage tokens encrypted</li>
-            <li>✅ Demo project - Railway hosted backend</li>
-          </ul>
+
+        <div className="space-y-8 text-gray-700 leading-relaxed text-lg">
+
+          {/* 1️⃣ INFORMATION WE COLLECT */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              1. Information We Collect
+            </h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Email address provided during registration</li>
+              <li>Encrypted password (hashed using bcrypt)</li>
+              <li>Financial data entered by the user (transactions, budgets, savings, bills)</li>
+            </ul>
+          </div>
+
+          {/* 2️⃣ HOW WE USE DATA */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              2. How We Use Your Data
+            </h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>To authenticate and authorize users securely</li>
+              <li>To display personalized financial insights and analytics</li>
+              <li>To improve application performance and user experience</li>
+            </ul>
+          </div>
+
+          {/* 3️⃣ DATA STORAGE & SECURITY */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              3. Data Storage & Security
+            </h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>User data is stored securely in a PostgreSQL database</li>
+              <li>Passwords are hashed using bcrypt encryption</li>
+              <li>Authentication is handled via JWT tokens</li>
+              <li>API endpoints are protected with token validation</li>
+              <li>No third-party analytics or tracking services are used</li>
+            </ul>
+          </div>
+
+          {/* 4️⃣ THIRD PARTY SERVICES */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              4. Third-Party Services
+            </h2>
+            <p>
+              Backend services are hosted on Railway. This project does not use
+              third-party advertising networks or tracking tools.
+            </p>
+          </div>
+
+          {/* 5️⃣ CONTACT */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              5. Contact
+            </h2>
+            <p>
+              If you have any privacy-related questions, please contact:
+              <br />
+              <strong className="text-emerald-600">
+                israrkhan171982@gmail.com
+              </strong>
+            </p>
+          </div>
+
           <p className="mt-12 text-sm opacity-75 text-center">
-            Last updated: Jan 2026 | Portfolio showcase
+            Last updated: January 2026
           </p>
+
         </div>
       </div>
     </div>
-     {/* <MenuDrawer /> */}
-
   </div>
 );
 
