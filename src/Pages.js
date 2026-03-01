@@ -470,30 +470,87 @@ export const PrivacyPage = () => (
 export const TermsPage = () => (
   <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-blue-50 p-4 md:p-8 pt-20 md:pt-24">
     <div className="max-w-3xl mx-auto">
-      <Link to="/" className="inline-flex px-6 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 mb-12 shadow-lg">
+
+      <Link
+        to="/"
+        className="inline-flex px-6 py-3 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 mb-12 shadow-lg"
+      >
         ← Back to Dashboard
       </Link>
+
       <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <h1 className="text-4xl font-bold text-gray-900 mb-10 flex items-center gap-3">
           📜 Terms of Service
         </h1>
-        <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
-          <p><strong>Project usage:</strong></p>
-          <ul className="list-disc pl-6 space-y-3">
-            <li> Full-stack college final year project</li>
-            <li> React + Node.js + PostgreSQL stack</li>
-            <li> Personal finance management app</li>
-            <li> Demo deployment: Vercel + Railway</li>
-            <li> Source code: GitHub public repo</li>
-            <li> For portfolio/hiring showcase only</li>
-          </ul>
+
+        <div className="space-y-8 text-gray-700 leading-relaxed text-lg">
+
+          {/* 1️⃣ ACCEPTANCE */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              1. Acceptance of Terms
+            </h2>
+            <p>
+              By accessing and using WealthWave, you agree to comply with and
+              be bound by these Terms of Service. If you do not agree with
+              these terms, please do not use the application.
+            </p>
+          </div>
+
+          {/* 2️⃣ USE OF APPLICATION */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              2. Use of the Application
+            </h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Users are responsible for the accuracy of data entered.</li>
+              <li>The application is intended for personal finance tracking purposes.</li>
+              <li>Unauthorized access or misuse of the system is prohibited.</li>
+            </ul>
+          </div>
+
+          {/* 3️⃣ NO FINANCIAL ADVICE */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              3. No Financial Advice
+            </h2>
+            <p>
+              WealthWave provides financial tracking tools and insights for
+              informational purposes only. The platform does not provide
+              professional financial, investment, or legal advice.
+            </p>
+          </div>
+
+          {/* 4️⃣ LIMITATION OF LIABILITY */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              4. Limitation of Liability
+            </h2>
+            <p>
+              The developer shall not be held liable for any financial loss,
+              damages, or decisions made based on the use of this application.
+              Users are solely responsible for their financial decisions.
+            </p>
+          </div>
+
+          {/* 5️⃣ MODIFICATIONS */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              5. Modifications
+            </h2>
+            <p>
+              These terms may be updated periodically. Continued use of the
+              application after changes are made constitutes acceptance of the
+              revised terms.
+            </p>
+          </div>
+
           <p className="mt-12 text-sm opacity-75 text-center">
-            Last updated: Jan 2026
+            Last updated: January 2026
           </p>
+
         </div>
       </div>
     </div>
-     {/* <MenuDrawer /> */}
-
   </div>
 );
