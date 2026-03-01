@@ -242,7 +242,7 @@ export const AboutPage = () => {
                className="px-8 py-4 bg-white text-emerald-700 rounded-2xl font-bold text-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
               🌐 Live GitHub Repo
             </a>
-            <a href="https://linkedin.com/in/israr-n-khan" 
+            <a href="https://www.linkedin.com/feed/" 
                className="px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold text-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
               💼 Connect on LinkedIn
             </a>
